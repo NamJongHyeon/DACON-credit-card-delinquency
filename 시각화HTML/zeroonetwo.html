@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '3f7392b8340a4f39bffc7519ee94324a')">0등급 직업유형</button>
+            <button class="tablinks" onclick="showChart(event, '6a39b6fd888d4ca08db744313b34dc82')">1등급 직업유형</button>
+            <button class="tablinks" onclick="showChart(event, '5b6257eecd054e0baa6aa5e39de8bfb7')">2등급 직업유형</button>
+    </div>
+
+    <div class="box">
+                <div id="3f7392b8340a4f39bffc7519ee94324a" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_3f7392b8340a4f39bffc7519ee94324a = echarts.init(
+            document.getElementById('3f7392b8340a4f39bffc7519ee94324a'), 'macarons', {renderer: 'canvas'});
+        var option_3f7392b8340a4f39bffc7519ee94324a = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": " ",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Medicine staff",
+                    "value": 83
+                },
+                {
+                    "name": "Accountants",
+                    "value": 118
+                },
+                {
+                    "name": "High skill tech staff",
+                    "value": 123
+                },
+                {
+                    "name": "Drivers",
+                    "value": 187
+                },
+                {
+                    "name": "Managers",
+                    "value": 280
+                },
+                {
+                    "name": "Sales staff",
+                    "value": 293
+                },
+                {
+                    "name": "Core staff",
+                    "value": 347
+                },
+                {
+                    "name": "Laborers",
+                    "value": 586
+                }
+            ],
+            "radius": "65%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a}{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Medicine staff",
+                "Accountants",
+                "High skill tech staff",
+                "Drivers",
+                "Managers",
+                "Sales staff",
+                "Core staff",
+                "Laborers"
+            ],
+            "selected": {},
+            "show": true,
+            "bottom": "0%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "0\ub4f1\uae09 \uc9c1\uc5c5\uc720\ud615",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "gray"
+            }
+        }
+    ]
+};
+        chart_3f7392b8340a4f39bffc7519ee94324a.setOption(option_3f7392b8340a4f39bffc7519ee94324a);
+    </script>
+                <div id="6a39b6fd888d4ca08db744313b34dc82" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_6a39b6fd888d4ca08db744313b34dc82 = echarts.init(
+            document.getElementById('6a39b6fd888d4ca08db744313b34dc82'), 'macarons', {renderer: 'canvas'});
+        var option_6a39b6fd888d4ca08db744313b34dc82 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": " ",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Medicine staff",
+                    "value": 191
+                },
+                {
+                    "name": "Accountants",
+                    "value": 227
+                },
+                {
+                    "name": "High skill tech staff",
+                    "value": 270
+                },
+                {
+                    "name": "Drivers",
+                    "value": 358
+                },
+                {
+                    "name": "Managers",
+                    "value": 458
+                },
+                {
+                    "name": "Core staff",
+                    "value": 622
+                },
+                {
+                    "name": "Sales staff",
+                    "value": 650
+                },
+                {
+                    "name": "Laborers",
+                    "value": 1082
+                }
+            ],
+            "radius": "65%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a}{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Medicine staff",
+                "Accountants",
+                "High skill tech staff",
+                "Drivers",
+                "Managers",
+                "Core staff",
+                "Sales staff",
+                "Laborers"
+            ],
+            "selected": {},
+            "show": true,
+            "bottom": "0%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "1\ub4f1\uae09 \uc9c1\uc5c5\uc720\ud615",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "gray"
+            }
+        }
+    ]
+};
+        chart_6a39b6fd888d4ca08db744313b34dc82.setOption(option_6a39b6fd888d4ca08db744313b34dc82);
+    </script>
+                <div id="5b6257eecd054e0baa6aa5e39de8bfb7" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_5b6257eecd054e0baa6aa5e39de8bfb7 = echarts.init(
+            document.getElementById('5b6257eecd054e0baa6aa5e39de8bfb7'), 'macarons', {renderer: 'canvas'});
+        var option_5b6257eecd054e0baa6aa5e39de8bfb7 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": " ",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Accountants",
+                    "value": 557
+                },
+                {
+                    "name": "Medicine staff",
+                    "value": 590
+                },
+                {
+                    "name": "High skill tech staff",
+                    "value": 647
+                },
+                {
+                    "name": "Drivers",
+                    "value": 1027
+                },
+                {
+                    "name": "Managers",
+                    "value": 1429
+                },
+                {
+                    "name": "Sales staff",
+                    "value": 1596
+                },
+                {
+                    "name": "Core staff",
+                    "value": 1677
+                },
+                {
+                    "name": "Laborers",
+                    "value": 2844
+                }
+            ],
+            "radius": "65%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a}{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Accountants",
+                "Medicine staff",
+                "High skill tech staff",
+                "Drivers",
+                "Managers",
+                "Sales staff",
+                "Core staff",
+                "Laborers"
+            ],
+            "selected": {},
+            "show": true,
+            "bottom": "0%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "2\ub4f1\uae09 \uc9c1\uc5c5\uc720\ud615",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "gray"
+            }
+        }
+    ]
+};
+        chart_5b6257eecd054e0baa6aa5e39de8bfb7.setOption(option_5b6257eecd054e0baa6aa5e39de8bfb7);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

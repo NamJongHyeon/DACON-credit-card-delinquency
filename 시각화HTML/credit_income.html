@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '084576d1d38a4a8e8578ba6574ae64da')">소득분류</button>
+            <button class="tablinks" onclick="showChart(event, 'bb4742332c884c53b05c67bd0fae5ec2')">교육수준</button>
+            <button class="tablinks" onclick="showChart(event, '6398558a404b4746beb7fa3b968ca7f4')">결혼여부</button>
+            <button class="tablinks" onclick="showChart(event, '8c91de44dd0d413db52aef35b9c6d4f3')">생활방식</button>
+    </div>
+
+    <div class="box">
+                <div id="084576d1d38a4a8e8578ba6574ae64da" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_084576d1d38a4a8e8578ba6574ae64da = echarts.init(
+            document.getElementById('084576d1d38a4a8e8578ba6574ae64da'), 'light', {renderer: 'canvas'});
+        var option_084576d1d38a4a8e8578ba6574ae64da = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "pie",
+                "clockwise": true,
+                "data": [
+                    {
+                        "name": "Commercial associate",
+                        "value": 4076
+                    },
+                    {
+                        "name": "Pensioner",
+                        "value": 2829
+                    },
+                    {
+                        "name": "State servant",
+                        "value": 1400
+                    },
+                    {
+                        "name": "Working",
+                        "value": 4
+                    },
+                    {
+                        "name": "Student",
+                        "value": 8653
+                    }
+                ],
+                "radius": [
+                    "30%",
+                    "60%"
+                ],
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "roseType": "radius",
+                "label": {
+                    "show": true,
+                    "position": "outside",
+                    "margin": 8,
+                    "formatter": "{b}\n{d}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "0.0\ub4f1\uae09",
+                "1.0\ub4f1\uae09",
+                "2.0\ub4f1\uae09"
+            ]
+        }
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Commercial associate",
+                        "Pensioner",
+                        "State servant",
+                        "Working"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Commercial associate",
+                            "value": 782
+                        },
+                        {
+                            "name": "Pensioner",
+                            "value": 536
+                        },
+                        {
+                            "name": "State servant",
+                            "value": 265
+                        },
+                        {
+                            "name": "Working",
+                            "value": 1639
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uc18c\ub4dd\ubd84\ub958",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Commercial associate",
+                        "Pensioner",
+                        "State servant",
+                        "Working",
+                        "Student"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Commercial associate",
+                            "value": 1344
+                        },
+                        {
+                            "name": "Pensioner",
+                            "value": 1084
+                        },
+                        {
+                            "name": "State servant",
+                            "value": 489
+                        },
+                        {
+                            "name": "Working",
+                            "value": 3
+                        },
+                        {
+                            "name": "Student",
+                            "value": 3347
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uc18c\ub4dd\ubd84\ub958",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Commercial associate",
+                        "Pensioner",
+                        "State servant",
+                        "Working",
+                        "Student"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Commercial associate",
+                            "value": 4076
+                        },
+                        {
+                            "name": "Pensioner",
+                            "value": 2829
+                        },
+                        {
+                            "name": "State servant",
+                            "value": 1400
+                        },
+                        {
+                            "name": "Working",
+                            "value": 4
+                        },
+                        {
+                            "name": "Student",
+                            "value": 8653
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uc18c\ub4dd\ubd84\ub958",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_084576d1d38a4a8e8578ba6574ae64da.setOption(option_084576d1d38a4a8e8578ba6574ae64da);
+    </script>
+                <div id="bb4742332c884c53b05c67bd0fae5ec2" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_bb4742332c884c53b05c67bd0fae5ec2 = echarts.init(
+            document.getElementById('bb4742332c884c53b05c67bd0fae5ec2'), 'macarons', {renderer: 'canvas'});
+        var option_bb4742332c884c53b05c67bd0fae5ec2 = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "pie",
+                "clockwise": true,
+                "data": [
+                    {
+                        "name": "Academic degree",
+                        "value": 14
+                    },
+                    {
+                        "name": "Higher education",
+                        "value": 4502
+                    },
+                    {
+                        "name": "Incomplete higher",
+                        "value": 660
+                    },
+                    {
+                        "name": "Lower secondary",
+                        "value": 170
+                    },
+                    {
+                        "name": "Secondary / secondary special",
+                        "value": 11616
+                    }
+                ],
+                "radius": [
+                    "30%",
+                    "60%"
+                ],
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "roseType": "radius",
+                "label": {
+                    "show": true,
+                    "position": "outside",
+                    "margin": 8,
+                    "formatter": "{b}\n{d}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "0.0\ub4f1\uae09",
+                "1.0\ub4f1\uae09",
+                "2.0\ub4f1\uae09"
+            ]
+        }
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Academic degree",
+                        "Higher education",
+                        "Incomplete higher",
+                        "Lower secondary",
+                        "Secondary / secondary special"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Academic degree",
+                            "value": 2
+                        },
+                        {
+                            "name": "Higher education",
+                            "value": 909
+                        },
+                        {
+                            "name": "Incomplete higher",
+                            "value": 114
+                        },
+                        {
+                            "name": "Lower secondary",
+                            "value": 28
+                        },
+                        {
+                            "name": "Secondary / secondary special",
+                            "value": 2169
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uad50\uc721\uc218\uc900",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Academic degree",
+                        "Higher education",
+                        "Incomplete higher",
+                        "Lower secondary",
+                        "Secondary / secondary special"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Academic degree",
+                            "value": 7
+                        },
+                        {
+                            "name": "Higher education",
+                            "value": 1751
+                        },
+                        {
+                            "name": "Incomplete higher",
+                            "value": 246
+                        },
+                        {
+                            "name": "Lower secondary",
+                            "value": 59
+                        },
+                        {
+                            "name": "Secondary / secondary special",
+                            "value": 4204
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uad50\uc721\uc218\uc900",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Academic degree",
+                        "Higher education",
+                        "Incomplete higher",
+                        "Lower secondary",
+                        "Secondary / secondary special"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Academic degree",
+                            "value": 14
+                        },
+                        {
+                            "name": "Higher education",
+                            "value": 4502
+                        },
+                        {
+                            "name": "Incomplete higher",
+                            "value": 660
+                        },
+                        {
+                            "name": "Lower secondary",
+                            "value": 170
+                        },
+                        {
+                            "name": "Secondary / secondary special",
+                            "value": 11616
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uad50\uc721\uc218\uc900",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_bb4742332c884c53b05c67bd0fae5ec2.setOption(option_bb4742332c884c53b05c67bd0fae5ec2);
+    </script>
+                <div id="6398558a404b4746beb7fa3b968ca7f4" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_6398558a404b4746beb7fa3b968ca7f4 = echarts.init(
+            document.getElementById('6398558a404b4746beb7fa3b968ca7f4'), 'light', {renderer: 'canvas'});
+        var option_6398558a404b4746beb7fa3b968ca7f4 = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "pie",
+                "clockwise": true,
+                "data": [
+                    {
+                        "name": "Civil marriage",
+                        "value": 1296
+                    },
+                    {
+                        "name": "Married",
+                        "value": 11841
+                    },
+                    {
+                        "name": "Separated",
+                        "value": 994
+                    },
+                    {
+                        "name": "Single / not married",
+                        "value": 2153
+                    },
+                    {
+                        "name": "Widow",
+                        "value": 678
+                    }
+                ],
+                "radius": [
+                    "30%",
+                    "60%"
+                ],
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "roseType": "radius",
+                "label": {
+                    "show": true,
+                    "position": "outside",
+                    "margin": 8,
+                    "formatter": "{b}\n{d}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "0.0\ub4f1\uae09",
+                "1.0\ub4f1\uae09",
+                "2.0\ub4f1\uae09"
+            ]
+        }
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Civil marriage",
+                        "Married",
+                        "Separated",
+                        "Single / not married",
+                        "Widow"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Civil marriage",
+                            "value": 288
+                        },
+                        {
+                            "name": "Married",
+                            "value": 2213
+                        },
+                        {
+                            "name": "Separated",
+                            "value": 193
+                        },
+                        {
+                            "name": "Single / not married",
+                            "value": 402
+                        },
+                        {
+                            "name": "Widow",
+                            "value": 126
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uacb0\ud63c\uc5ec\ubd80",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Civil marriage",
+                        "Married",
+                        "Separated",
+                        "Single / not married",
+                        "Widow"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Civil marriage",
+                            "value": 539
+                        },
+                        {
+                            "name": "Married",
+                            "value": 4140
+                        },
+                        {
+                            "name": "Separated",
+                            "value": 349
+                        },
+                        {
+                            "name": "Single / not married",
+                            "value": 940
+                        },
+                        {
+                            "name": "Widow",
+                            "value": 299
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uacb0\ud63c\uc5ec\ubd80",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Civil marriage",
+                        "Married",
+                        "Separated",
+                        "Single / not married",
+                        "Widow"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Civil marriage",
+                            "value": 1296
+                        },
+                        {
+                            "name": "Married",
+                            "value": 11841
+                        },
+                        {
+                            "name": "Separated",
+                            "value": 994
+                        },
+                        {
+                            "name": "Single / not married",
+                            "value": 2153
+                        },
+                        {
+                            "name": "Widow",
+                            "value": 678
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uacb0\ud63c\uc5ec\ubd80",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_6398558a404b4746beb7fa3b968ca7f4.setOption(option_6398558a404b4746beb7fa3b968ca7f4);
+    </script>
+                <div id="8c91de44dd0d413db52aef35b9c6d4f3" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_8c91de44dd0d413db52aef35b9c6d4f3 = echarts.init(
+            document.getElementById('8c91de44dd0d413db52aef35b9c6d4f3'), 'light', {renderer: 'canvas'});
+        var option_8c91de44dd0d413db52aef35b9c6d4f3 = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "pie",
+                "clockwise": true,
+                "data": [
+                    {
+                        "name": "Co-op apartment",
+                        "value": 66
+                    },
+                    {
+                        "name": "House / apartment",
+                        "value": 15205
+                    },
+                    {
+                        "name": "Municipal apartment",
+                        "value": 548
+                    },
+                    {
+                        "name": "Office apartment",
+                        "value": 118
+                    },
+                    {
+                        "name": "Rented apartment",
+                        "value": 232
+                    },
+                    {
+                        "name": "With parents",
+                        "value": 793
+                    }
+                ],
+                "radius": [
+                    "30%",
+                    "60%"
+                ],
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "roseType": "radius",
+                "label": {
+                    "show": true,
+                    "position": "outside",
+                    "margin": 8,
+                    "formatter": "{b}\n{d}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "0.0\ub4f1\uae09",
+                "1.0\ub4f1\uae09",
+                "2.0\ub4f1\uae09"
+            ]
+        }
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Co-op apartment",
+                        "House / apartment",
+                        "Municipal apartment",
+                        "Office apartment",
+                        "Rented apartment",
+                        "With parents"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Co-op apartment",
+                            "value": 14
+                        },
+                        {
+                            "name": "House / apartment",
+                            "value": 2873
+                        },
+                        {
+                            "name": "Municipal apartment",
+                            "value": 110
+                        },
+                        {
+                            "name": "Office apartment",
+                            "value": 24
+                        },
+                        {
+                            "name": "Rented apartment",
+                            "value": 50
+                        },
+                        {
+                            "name": "With parents",
+                            "value": 151
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uc0dd\ud65c\ubc29\uc2dd",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Co-op apartment",
+                        "House / apartment",
+                        "Municipal apartment",
+                        "Office apartment",
+                        "Rented apartment",
+                        "With parents"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Co-op apartment",
+                            "value": 30
+                        },
+                        {
+                            "name": "House / apartment",
+                            "value": 5569
+                        },
+                        {
+                            "name": "Municipal apartment",
+                            "value": 160
+                        },
+                        {
+                            "name": "Office apartment",
+                            "value": 48
+                        },
+                        {
+                            "name": "Rented apartment",
+                            "value": 147
+                        },
+                        {
+                            "name": "With parents",
+                            "value": 313
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uc0dd\ud65c\ubc29\uc2dd",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "Co-op apartment",
+                        "House / apartment",
+                        "Municipal apartment",
+                        "Office apartment",
+                        "Rented apartment",
+                        "With parents"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "top": "5%",
+                    "orient": "horizontal",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "Co-op apartment",
+                            "value": 66
+                        },
+                        {
+                            "name": "House / apartment",
+                            "value": 15205
+                        },
+                        {
+                            "name": "Municipal apartment",
+                            "value": 548
+                        },
+                        {
+                            "name": "Office apartment",
+                            "value": 118
+                        },
+                        {
+                            "name": "Rented apartment",
+                            "value": 232
+                        },
+                        {
+                            "name": "With parents",
+                            "value": 793
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc2e0\uc6a9\ub4f1\uae09\ubcc4 \uc0dd\ud65c\ubc29\uc2dd",
+                    "left": "center",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_8c91de44dd0d413db52aef35b9c6d4f3.setOption(option_8c91de44dd0d413db52aef35b9c6d4f3);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
